@@ -16,7 +16,7 @@
         padding-left: 5px;
         padding-right: 5px;
       }
-
+      
       table {
         border-spacing: 0px;
       }
@@ -28,8 +28,16 @@
       .nmod {
         color: #926592
       }
-      .omod {
-        color: grey
+      
+      @media only screen and (max-width: 650px) {
+        td:nth-child(6),
+        td:nth-child(7),
+        td:nth-child(8),
+        th:nth-child(6),
+        th:nth-child(7),
+        th:nth-child(8) {
+          display: none
+        }
       }
     </style>
   </head>
@@ -56,7 +64,7 @@
         <tr>
           <th>#</th>
           <th>Rune</th>
-          <th>SC Value</th>
+          <th>HR Value (SC)</th>
           <th>Name</th>
           <th>Level</th>
           <th>Weapon</th>
@@ -380,20 +388,13 @@
           </td>
           <td>31</td>
           <td>
-            <span class="nmod">20% Enhanced Damage</span><br /><span
-              class="omod"
-              >Hit Causes Monster to Flee 25%</span
-            >
+            <span class="nmod">20% Enhanced Damage</span>
           </td>
           <td>
-            Replenish Life <span class="nmod">+10</span><br /><span class="omod"
-              >Replenish Life +7</span
-            >
+            Replenish Life <span class="nmod">+10</span>
           </td>
           <td>
-            Replenish Life <span class="nmod">+10</span><br /><span class="omod"
-              >Replenish Life +7</span
-            >
+            Replenish Life <span class="nmod">+10</span>
           </td>
           <td>Low</td>
         </tr>
@@ -575,7 +576,7 @@
             <span class="nmod">10%</span> Chance of Open Wounds,<br /><span
               class="nmod"
               >+120 Open Wounds Damage per Second</span
-            ><br /><span class="omod">25% Chance of Open Wounds</span>
+            >
           </td>
           <td>All Resistances +15</td>
           <td>All Resistances +22</td>
@@ -623,15 +624,11 @@
           <td>30% Better Chance of Getting Magic Items</td>
           <td>
             <span class="nmod">30%</span> Better Chance of Getting Magic
-            Items<br /><span class="omod"
-              >25% Better Chance of Getting Magic Items</span
-            >
+            Items
           </td>
           <td>
             <span class="nmod">30%</span> Better Chance of Getting Magic
-            Items<br /><span class="omod"
-              >25% Better Chance of Getting Magic Items</span
-            >
+            Items
           </td>
           <td>Mid</td>
         </tr>
@@ -654,16 +651,10 @@
           <td>53</td>
           <td>20% Bonus to Attack Rating</td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Poison Resist<br /><span
-              class="omod"
-              >+5% to Maximum Poison Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Poison Resist
           </td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Poison Resist<br /><span
-              class="omod"
-              >+5% to Maximum Poison Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Poison Resist
           </td>
           <td>Mid</td>
         </tr>
@@ -686,16 +677,10 @@
           <td>55</td>
           <td>7% Mana Stolen per Hit</td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Fire Resist<br /><span
-              class="omod"
-              >+5% to Maximum Fire Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Fire Resist
           </td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Fire Resist<br /><span
-              class="omod"
-              >+5% to Maximum Fire Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Fire Resist
           </td>
           <td>High</td>
         </tr>
@@ -717,22 +702,13 @@
           </td>
           <td>57</td>
           <td>
-            <span class="nmod">+45%</span> Enhanced Damage<br /><span
-              class="omod"
-              >+50% Enhanced Damage</span
-            >
+            <span class="nmod">+45%</span> Enhanced Damage
           </td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Cold Resist<br /><span
-              class="omod"
-              >+5% to Maximum Cold Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Cold Resist
           </td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Cold Resist<br /><span
-              class="omod"
-              >+5% to Maximum Cold Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Cold Resist
           </td>
           <td>High</td>
         </tr>
@@ -755,16 +731,10 @@
           <td>59</td>
           <td>20% Deadly Strike</td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Lightning Resist<br /><span
-              class="omod"
-              >+5% to Maximum Lightning Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Lightning Resist
           </td>
           <td>
-            <span class="nmod">+4%</span> to Maximum Lightning Resist<br /><span
-              class="omod"
-              >+5% to Maximum Lightning Resist</span
-            >
+            <span class="nmod">+4%</span> to Maximum Lightning Resist
           </td>
           <td>High</td>
         </tr>
@@ -786,10 +756,7 @@
           </td>
           <td>61</td>
           <td>
-            <span class="nmod">+4 Life after each Kill</span><br /><span
-              class="omod"
-              >Hit Blinds Target</span
-            >
+            <span class="nmod">+4 Life after each Kill</span>
           </td>
           <td>Increase Maximum Mana 5%</td>
           <td>+50 to Mana</td>
@@ -815,11 +782,11 @@
           <td>20% Chance of Crushing Blow</td>
           <td>
             Physical Damage Taken Reduced by <span class="nmod">5%</span
-            ><br /><span class="omod">Physical Damage Taken Reduced by 8%</span>
+            >
           </td>
           <td>
             Physical Damage Taken Reduced by <span class="nmod">5%</span
-            ><br /><span class="omod">Physical Damage Taken Reduced by 8%</span>
+            >
           </td>
           <td>High</td>
         </tr>
@@ -843,9 +810,7 @@
           <td>Ignore Target's Defense</td>
           <td>Increase Maximum Life 5%</td>
           <td>
-            <span class="nmod">+75</span> to Life<br /><span class="omod"
-              >+50 to Life</span
-            >
+            <span class="nmod">+75</span> to Life
           </td>
           <td>High</td>
         </tr>
